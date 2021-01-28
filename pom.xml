@@ -25,45 +25,60 @@
                     <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                    <includes>
-                        <include>**/*Runner*.java</include>
-                    </includes>
-                    <testFailureIgnore>true</testFailureIgnore>
-                    <runOrder>alphabetical</runOrder>
-                    <parallel>methods</parallel>
-                    <threadCount>3</threadCount>
-                    <perCoreThreadCount>false</perCoreThreadCount>
-                    <forkCount>2C</forkCount>
-                </configuration>
-            </plugin>
-            <plugin>
-                <groupId>net.masterthought</groupId>
-                <artifactId>cucumber-reporting</artifactId>
-                <version>5.4.0</version>
-                <executions>
-                    <execution>
-                        <id>execution</id>
-                        <phase>verify</phase>
-                        <goals>
-                            <goal>generate</goal>
-                        </goals>
-                        <configuration>
-                            <projectName>Cucumber HTML Reports</projectName>
-                            <outputDirectory>${project.build.directory}</outputDirectory>
-                            <inputDirectory>${project.build.directory}</inputDirectory>
-                            <jsonFiles>
-                                <param>**/cucumber*.json</param>
-                            </jsonFiles>
-                        </configuration>
-                    </execution>
-                </executions>
-            </plugin>
-        </plugins>
+
+
+                <plugin>
+                    <groupId>org.apache.maven.plugins</groupId>
+                    <artifactId>maven-surefire-plugin</artifactId>
+                    <version>3.0.0-M5</version>
+                    <configuration>
+                        <includes>
+                            <include>
+                               **/*TestRunner.java
+                            </include>
+                        </includes>
+                        <testFailureIgnore>true</testFailureIgnore>
+                    </configuration>
+                </plugin>
+                <plugin>
+                    <groupId>net.masterthought</groupId>
+                    <artifactId>maven-cucumber-reporting</artifactId>
+                    <version>5.0.0</version>
+                    <executions>
+                        <execution>
+                            <id>execution</id>
+                            <phase>verify</phase>
+                            <goals>
+                                <goal>generate</goal>
+                            </goals>
+                            <configuration>
+                                <projectName>cucumber-jvm-example</projectName>
+                                <!-- optional, per documentation set this to "true" to bypass generation of Cucumber Reports entirely, defaults to false if not specified -->
+                                <skip>false</skip>
+                                <!-- output directory for the generated report -->
+                                <outputDirectory>${project.build.directory}</outputDirectory>
+                                <!-- optional, defaults to outputDirectory if not specified -->
+                                <inputDirectory>${project.build.directory}</inputDirectory>
+                                <jsonFiles>
+                                    <!-- supports wildcard or name pattern -->
+                                    <param>**/cucumber*.json</param>
+                                </jsonFiles>
+
+
+                                <!-- optional, set true to group features by its Ids -->
+                                <mergeFeaturesById>false</mergeFeaturesById>
+                                <!-- optional, set true to get a final report with latest results of the same test from different test runs -->
+                                <mergeFeaturesWithRetest>false</mergeFeaturesWithRetest>
+                                <!-- optional, set true to fail build on test failures -->
+                                <checkBuildResult>false</checkBuildResult>
+                            </configuration>
+                        </execution>
+                    </executions>
+                </plugin>
+
+            </plugins>
+
+
     </build>
 
     <dependencies>
@@ -140,6 +155,8 @@
             <version>1.7.25</version>
             <scope>test</scope>
         </dependency>
+
+
 
 
     </dependencies>

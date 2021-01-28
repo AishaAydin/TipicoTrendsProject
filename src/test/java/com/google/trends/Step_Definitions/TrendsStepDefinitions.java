@@ -11,7 +11,9 @@ import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 import org.apache.log4j.Logger;
 import org.junit.Assert;
-
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 
 public class TrendsStepDefinitions {
@@ -64,10 +66,16 @@ public class TrendsStepDefinitions {
     }
 
     @Then("user verify percentual ratio")
-    public void userVerifyPercentualRatio() {
+    public void userVerifyPercentualRatio()  {
 
+        WebElement ActualRatio=Driver.getDriver().findElement(By.xpath("//div[@class='progress-bar-wrapper multi-heat-progress-bar']"));
+        Actions actions= new Actions(Driver.getDriver());
+        actions.moveToElement(ActualRatio).perform();
+
+       // String ExpectedRatio="%100 NY for Selenium WebDriver Uses";
+
+        Assert.assertTrue("Assertion Failed",ActualRatio.isDisplayed());
 
     }
-
 
 }

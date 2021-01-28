@@ -11,6 +11,7 @@ import org.junit.runner.RunWith;
                 "html:target/default-cucumber-report.html",
                 "json:target/cucumber.json",
                 "rerun:target/rerun.txt"
+
         },
         features = "src/test/Resource/Feauture",
         glue = "com/google/trends/Step_Definitions",
