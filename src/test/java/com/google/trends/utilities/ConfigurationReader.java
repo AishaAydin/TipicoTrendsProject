@@ -1,4 +1,4 @@
-package com.google.trends.Utilities;
+package com.google.trends.utilities;
 
 import java.io.FileInputStream;
 import java.util.Properties;
@@ -8,7 +8,7 @@ public class ConfigurationReader {
     private static Properties configFile;
 
     static {
-        try(FileInputStream input = new FileInputStream("configuration.properties");){
+        try(FileInputStream input = new FileInputStream("Configuration.properties");){
             configFile = new Properties();
             configFile.load(input);
         } catch (Exception e) {
@@ -19,7 +19,7 @@ public class ConfigurationReader {
     }
 
     /**
-     * This method returns property value from configuration.properties file
+     * This method returns property value from Configuration.properties file
      * @param keyName property name
      * @return property value
      */

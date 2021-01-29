@@ -1,4 +1,4 @@
-package com.google.trends.Utilities;
+package com.google.trends.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;
@@ -31,7 +31,7 @@ public class Driver {
         //if webdriver object doesn't exist
         //create it
         if (driverPool.get() == null) {
-            //specify browser type in configuration.properties file
+            //specify browser type in Configuration.properties file
             String browser = ConfigurationReader.getProperty("browser").toLowerCase();
             // -Dbrowser=firefox
             if (System.getProperty("browser") != null) {

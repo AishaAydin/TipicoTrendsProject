@@ -1,0 +1,24 @@
+2021-01-28 16:53:07 INFO  Hooks:17 - ::: STARTING AUTOMATION :::
+2021-01-28 16:53:07 INFO  Hooks:18 - Test setup
+2021-01-28 16:53:07 INFO  Driver:41 - Browser :: chrome
+2021-01-28 16:53:08 INFO  WebDriverManager:573 - Using chromedriver 88.0.4324.96 (since Chrome 88 is installed in your machine)
+2021-01-28 16:53:08 INFO  WebDriverManager:631 - Exporting webdriver.chrome.driver as /Users/ferdakesik/.m2/repository/webdriver/chromedriver/mac64/88.0.4324.96/chromedriver
+2021-01-28 16:53:23 INFO  TrendsMainPage:20 - Word: Selenium WebDriver
+2021-01-28 16:53:25 INFO  TrendsStepDefinitions:39 - Verify that title contains Explore
+2021-01-28 16:53:25 INFO  TrendsExplorePage:27 - Word: Javascript WebDriverIO
+2021-01-28 16:53:27 INFO  TrendsStepDefinitions:52 - Verify page is Compare
+2021-01-28 16:53:27 INFO  TrendsComparePage:36 - Word: New York
+2021-01-28 16:53:29 INFO  TrendsComparePage:47 - Selecting time as a Past 90 Days 
+2021-01-28 16:53:31 INFO  Hooks:40 - ::: Ending automation :::
+2021-01-28 22:38:11 INFO  Hooks:17 - ::: STARTING AUTOMATION :::
+2021-01-28 22:38:11 INFO  Hooks:18 - Test setup
+2021-01-28 22:38:11 INFO  Driver:41 - Browser :: chrome
+2021-01-28 22:38:15 INFO  WebDriverManager:573 - Using chromedriver 88.0.4324.96 (since Chrome 88 is installed in your machine)
+2021-01-28 22:38:15 INFO  WebDriverManager:631 - Exporting webdriver.chrome.driver as /Users/ferdakesik/.m2/repository/webdriver/chromedriver/mac64/88.0.4324.96/chromedriver
+2021-01-28 22:38:49 INFO  TrendsMainPage:20 - Word: Selenium WebDriver
+2021-01-28 22:38:52 INFO  TrendsStepDefinitions:39 - Verify that title contains Explore
+2021-01-28 22:38:53 INFO  TrendsExplorePage:27 - Word: Javascript WebDriverIO
+2021-01-28 22:38:54 INFO  TrendsStepDefinitions:52 - Verify page is Compare
+2021-01-28 22:38:54 INFO  TrendsComparePage:36 - Word: New York
+2021-01-28 22:38:56 INFO  TrendsComparePage:47 - Selecting time as a Past 90 Days 
+2021-01-28 22:39:00 INFO  Hooks:40 - ::: Ending automation :::

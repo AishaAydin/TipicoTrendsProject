@@ -1,6 +1,6 @@
-package com.google.trends.Pages;
+package com.google.trends.pages;
 
-import com.google.trends.Utilities.ConfigurationReader;
+import com.google.trends.utilities.ConfigurationReader;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;

@@ -1,7 +1,7 @@
-package com.google.trends.Pages;
+package com.google.trends.pages;
 
-import com.google.trends.Utilities.ConfigurationReader;
-import com.google.trends.Utilities.Driver;
+import com.google.trends.utilities.ConfigurationReader;
+import com.google.trends.utilities.Driver;
 import org.apache.log4j.Logger;
 import org.openqa.selenium.*;
 import org.openqa.selenium.support.FindBy;

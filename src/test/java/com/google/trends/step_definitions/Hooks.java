@@ -1,6 +1,6 @@
-package com.google.trends.Step_Definitions;
+package com.google.trends.step_definitions;
 
-import com.google.trends.Utilities.Driver;
+import com.google.trends.utilities.Driver;
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;

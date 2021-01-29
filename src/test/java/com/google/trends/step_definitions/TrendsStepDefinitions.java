@@ -1,10 +1,10 @@
-package com.google.trends.Step_Definitions;
+package com.google.trends.step_definitions;
 
-import com.google.trends.Pages.TrendsComparePage;
-import com.google.trends.Pages.TrendsExplorePage;
-import com.google.trends.Pages.TrendsMainPage;
-import com.google.trends.Utilities.ConfigurationReader;
-import com.google.trends.Utilities.Driver;
+import com.google.trends.pages.TrendsComparePage;
+import com.google.trends.pages.TrendsExplorePage;
+import com.google.trends.pages.TrendsMainPage;
+import com.google.trends.utilities.ConfigurationReader;
+import com.google.trends.utilities.Driver;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
